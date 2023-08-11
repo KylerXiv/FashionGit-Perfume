@@ -1,0 +1,320 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .con {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #00101f;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  nav .con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .C {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #010010;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+  
+  
+  p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-style: oblique;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+  }
+  
+  .overlay-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+ 
+  
+  .photo-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  .photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photo {
+    position: relative;
+    flex: 1;
+    margin: 0 10px;
+    overflow: hidden; /* Add this line to hide overflowing content */
+    transition: transform 0.3s; /* Add this line for smooth transition */
+  }
+  
+  .photo:hover {
+    transform: translateY(-10px); /* Move the photo up on hover */
+  }
+  
+  .t-o {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+ 
+  .btn-shop {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-shop:hover {
+    background-color: none;
+    color: black
+  
+  }
+
+    /* Style for the offcanvas content */
+    .offcanvas-header {
+        background-color: #000;
+        color: #fff;
+        border-bottom: 1px solid #ccc; /* Add a line under the header */
+      }
+      
+      .offcanvas-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      .offcanvas-body {
+        padding: 1rem;
+        text-align: center; /* Align the content to the center */
+      }
+      
+      .offcanvas-body img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+      
+      .offcanvas-body h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem; /* Add margin at the bottom to separate from the content below */
+        border-bottom: 3px solid black; /* Add a line under the h2 */
+        padding-bottom: 0.5rem; /* Adjust the space between the line and the h2 text */
+      }
+      
+      .offcanvas-body p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+    
+    /* Additional styles to mimic Chanel perfume page */
+    .offcanvas-header {
+      border-bottom: 1px solid #ccc;
+      padding: 1rem;
+    }
+    
+    .offcanvas-body {
+      background-color: #f6f6f6;
+      text-align: center;
+    }
+    
+    .offcanvas-body p {
+      color: black;
+    }
+  
+    .btn-addToCart {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 1rem auto;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #7f9bb4;
+        background-color: #010010;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .btn-addToCart:hover {
+        background-color: none;
+        color: white;
+      
+      }
+  
+  /* Footer */
+  .footer {
+    background-color: black;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+  
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__section {
+    flex: 1;
+  }
+  
+  .footer__section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #FFFDD0;
+  }
+  
+  .footer__section ul {
+    list-style: none;
+  }
+  
+  .footer__section ul li {
+    margin-bottom: 10px;
+    color: cadetblue;
+  }
+  
+  .footer__section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer__social {
+    flex: 1;
+  }
+  
+  .footer__social h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .footer__social ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__social ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .footer__bottom {
+    background-color: #222;
+    padding: 20px 0;
+  }
+  
+  .footer__bottom p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionGit</title>
+  <link rel="stylesheet" href="Fashion.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">FashionGit</a>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="Promotions.html">Watches</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="image-container">
+          <img src="Pics/tc.jpg" alt="Image">
+          <div class="text-overlay">
+              <h2>Bleu</h2>
+              <p>DE</p>
+              <h2>FashionGit</h2>
+          </div>
+      </div>
+  </div>
+  <div class="product">
+    <div class="product__header">
+      <h2>Egoïste
+        </h2>
+      <p>An eromatic-woody frangrance with ambery and musky notes</p>
+    </div>
+    <div class="product__photo">
+      <img src="Pics/spray.webp" alt="Product Image">
+      <div class="offcanvas-b">
+        <button class="btn-shop" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Shop Now</button>
+    </div>
+    </div>  
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <h2>Egoïste</h2>
+        <p>An eromatic-woody frangrance with ambery and musky notes</p>
+        <p>Price: $65</p>
+        <!-- Dropdown menu for product sizes -->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Size
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">1.7 FL. OZ</a></li>
+          <li><a class="dropdown-item" href="#">3.4 FL. OZ</a></li>
+          <li><a class="dropdown-item" href="#">5 FL. OZ</a></li>
+        </ul>
+      </div>
+        <img src="Pics/spray.webp" alt="Product Image">
+      </div>
+      <div>
+        <button class="btn-addToCart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Add to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">FashionGit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="cartImg">
+            <img src="Pics/spray.webp" alt="">
+            <h2>BLEU DE CHANEL</h2>
+            <p>An eromatic-woody frangrance with ambery and musky notes</p>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1" onchange="updatePrice()">
+            </div>
+
+            <h3><span id="price" style="font-size: 18px;">Price: $ 125</span></h3>
+
+            <!-- Add to Cart button -->
+            <button class="btn-addToCart" onclick="addToCart()">Add to Cart</button>
+        </div>  
+    </div>
+</div>
+  
+
+  <div class="Tc2">
+    <img src="Pics/tc2.jpg" alt="">
+  </div>
+  <div class="product">
+    <div class="product__header">
+      <h2>THE PARFUM
+        </h2>
+      <p>An intense woody aromatic frangrance with powerful and refined notes</p>
+    </div>
+    <div class="product__photo">
+      <img src="Pics/parfum.jpg" alt="Product Image">
+    </div>
+    <div class="product__actions">
+      <a href="#" class="shop-now">Shop Now</a>
+    </div>  
+  </div>
+  </header>
+
+
+  <!-- Featured Products Section -->
+  <div class="featured-products">
+    <div class="product">
+      <img src="Pics/bleu.jpg" alt="Product 1">
+      <h3>THE EAU DE PARFUM</h3>
+      <p>An eromatic-woody frangrance with ambery and musky notes</p>
+      <a href="#" class="shop-now">Shop Now</a>
+    </div>
+    <div class="product">
+      <img src="Pics/parfum.jpg" alt="Product 2">
+      <h3>THE PARFUM</h3>
+      <p>An intense woody aromatic frangrance with powerful and refined notes</p>
+      <a href="#" class="shop-now">Shop Now</a>
+    </div>
+    <div class="product">
+      <img src="Pics/spray.webp" alt="Product 3">
+      <h3>Egoïste</h3>
+      <p>Eau de Toilette Spray</p>
+      <a href="#" class="shop-now">Shop Now</a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <div class="footer__section">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: +1 (123) 456-7890</li>
+            <li><a href="#">Contact Form</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+          <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+          <li><a href="#"><i class="ri-pinterest-fill"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2023 Fashion House. All rights reserved.</p>
+        <p>Designed by YourName</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    });
+
+    // Function to update the price based on the quantity input
+function updatePrice() {
+    var quantity = parseInt(document.getElementById('quantity').value);
+    var originalPrice = 125;
+    var totalPrice = originalPrice * quantity;
+    document.getElementById('price').innerText =totalPrice;
+}
+
+// Function to handle the "Add to Cart" button click
+function addToCart() {
+    var quantity = parseInt(document.getElementById('quantity').value);
+    alert(quantity + ' item(s) added to the cart.');
+}
+function addToCart() {
+
+
+// Set the URL of the page to navigate to
+var newPageUrl = "PaymentMethod.html";
+
+// Redirect the page to the new URL
+window.location.href = newPageUrl;
+}
+
+
+
+
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forgotPSW.css">
+</head>
+<body>
+        <!-- forgot password form -->
+        <div class="forgot-password-container" id="forgotPassword">
+            <div class="top">
+                <span>Remembered your password? <a href="login.html">Login</a></span>
+                <p>Forgot Password</p>
+            </div>
+            <form id="forgotPasswordForm" onsubmit="return resetPassword()">
+                <div class="input-box">
+                    <input type="email" class="input-field" name="resetEmail" placeholder="Enter your email" required>
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Reset Password">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
